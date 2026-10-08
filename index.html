@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob-Havo Ilovasi</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome belgilari uchun (ixtiyoriy) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Shahar nomini kiriting..." spellcheck="false">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="error" id="error-msg">
+            <p>Shahar topilmadi! Qaytadan urinib ko'ring.</p>
+        </div>
+
+        <div class="weather" id="weather-box">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" class="weather-icon" id="weather-icon" alt="Weather Icon">
+            <h1 class="temp" id="temp">--°C</h1>
+            <h2 class="city" id="city-name">--</h2>
+            <p class="description" id="weather-desc">--</p>
+
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p class="humidity" id="humidity">--%</p>
+                        <p>Namlik</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind" id="wind">-- km/h</p>
+                        <p>Shamoli tezligi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
